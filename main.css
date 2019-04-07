@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700');
+
+html, body {
+    font-family: Heebo;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    animation: h1fadein 2s;
+    animation-fill-mode: forwards;
+    margin-bottom: 0;
+}
+
+#main_content {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+}
+
+form {
+    animation: formfadein 2s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+input[type="text"] {
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: solid 2px #cccccc;
+}
+
+input[type="text"]:focus {
+    border-bottom: solid 2px #808080;
+}
+
+input[type="submit"] {
+    margin: auto;
+    display: block;
+    margin-top: 2%;
+    padding: 1% 2%;
+    border: solid 1px #cccccc;
+    border-radius: 3px;
+}
+
+#graph_container {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+}
+
+#prediction_container {
+    font-size: 2em;
+    display: none;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+}
+
+footer {
+    font-size: 0.75rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes h1fadein {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+        font-size: 5rem;
+    }
+}
+
+@keyframes formfadein {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;    
+    }
+}

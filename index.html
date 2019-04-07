@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stockeye</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="particles-js">
+        <div id="content">
+            <div id="main_content">
+                <h1>Welcome to StockEye</h1>
+                <form action="#" onsubmit="callServer() & createHistogram()">
+                    <label for="stock_name">Stock Ticker: <input type="text" id="stock_name" name="stock_name"></label>
+                    <input type="submit">
+                </form>
+            </div>
+            <div id="graph_container"></div>
+            <div id="prediction_container">
+                <p id="average">Average Sentiment: </p>
+                <p id="rec">Recommeneded Action: </p>
+            </div>
+            <footer>
+                <p>Project by Aarav Bajaj, Anirudh Bansal, Arya Grayeli, Pranav Mathur</p>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('particles json loaded...');
+        });
+    </script>
+    
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
